@@ -11,23 +11,184 @@
   </head>
 
   <body>
+
     <header class="header">
-      <div class="header-container container">
-        <nav class="site-nav">
-          <span class="logo">Food</span>
-          <ul class="nav-list list">
-            <li class="nav-item"><a class="nav-link link" href="#">About</a></li>
-            <li class="nav-item"><a class="nav-link link" href="#">Menu</a></li>
-            <li class="nav-item"><a class="nav-link link" href="#">Blog</a></li>
-            <li class="nav-item"><a class="nav-link link" href="#">Contact</a></li>
-          </ul>
+      <div class="container">
+        <nav class="header-nav">
+          <a class="header-logo" href="#"><span class="logo">Food</span></a>
+          
+          <button 
+            class="menu-btn" 
+            type="button" 
+            aria-label="Mobile menu toggle"
+            aria-expanded="false" 
+            aria-controls="menu-container">
+            <svg width="48" height="48" >
+              <use class="icon-open" href="./images/symbol-defs.svg#header-icon-menu" />
+              <use class="icon-close" href="./images/symbol-defs.svg#header-icon-close" />
+            </svg>
+          </button>
+          
+          <div class="menu-container is-open">
+            <ul class="nav-list">
+              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+            <button class="btn-transparent" type="button">Contact us</button>
+          </div>
         </nav>
-        <button class="contact-btn" type="button">Contact us</button>
       </div>
     </header>
 
     <main>
+      <!-- <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <b class="hero-topic">Food Market</b>
+            <h1 class="hero-title">Welcome to Food Market</h1>
+            <p class="hero-text">The sky was cloudless and of a deep dark blue. The spectacle before us was indeed sublime.</p>
+            <a class="btn-gradient" src="#">See Menu</a>
+          </div>
+        </div>
+      </section> -->
 
+      <!-- <section class="features section">
+        <div class="container">
+          <b class="features-topic">Best Food</b>
+          <h2 class="features-title">Features</h2>
+          <p class="features-text">The sky was cloudless and of a deep dark blue. The spectacle before us was indeed sublime.</p>
+          
+          <ul class="features-list">
+            <li class="features-item">
+              <div class="features-icon icon-apple" >
+                <svg width="56" height="64">
+                  <use href="./images/symbol-defs.svg#icon-apple"  />
+                </svg>
+              </div>
+              <h3 class="item-title">Fresh Food</h3>
+              <p class="item-text">As I went on, still gaining velocity, the palpitation of night and day merged.</p>
+              <a class="features-link" src="#">Explore</a>
+            </li>
+
+            <li class="features-item">
+              <div class="features-icon icon-bike">
+                <svg width="64" height="56" >
+                  <use class="icon" href="./images/symbol-defs.svg#icon-bike" />
+                </svg>
+              </div>
+              <h3 class="item-title">Delivery</h3>
+              <p class="item-text">Went on, still gaining velocity, the palpitation of night and day merged.</p>
+              <a class="features-link" src="#">See map</a>
+            </li>
+
+            <li class="features-item">
+              <div class="features-icon icon-toque">
+                <svg width="64" height="64" >
+                  <use class="icon" href="./images/symbol-defs.svg#icon-toque" />
+                </svg>
+              </div>
+              <h3 class="item-title">Restaurant</h3>
+              <p class="item-text">Still gaining velocity, the went palpitation of night and day merged.</p>
+              <a class="features-link" src="#">Read More</a>
+            </li>
+          </ul>
+        </div>
+      </section> -->
+
+      <!-- <section class="about section">
+        <div class="container">
+          <div class="about-content">
+            <b class="about-topic">About Us</b>
+            <h2 class="about-title">Most Biggest Food Market</h2>
+            <p class="about-text">The sky was cloudless and of a deep</p>
+            <p class="about-text-small">A peep at some distant orb has power to raise and purify our thoughts like a strain of sacred
+              music.</p>
+            <button class="btn-transparent" type="button">About Us</button>
+          </div>
+          
+          <ul class="about-list">
+            <li class="about-item">
+              <p class="fact-quantity">2020</p>
+              <p class="fact-topic">Created</p>
+              <p class="fact-desc">As I went on, still gaining velocity, the palpitation</p>
+            </li>
+            <li class="about-item">
+              <p class="fact-quantity">45+</p>
+              <p class="fact-topic">Employes</p>
+              <p class="fact-desc">Went on, still gaining velocity, the palpitation</p>
+            </li>
+            <li class="about-item">
+              <p class="fact-quantity">1000</p>
+              <p class="fact-topic">Orders</p>
+              <p class="fact-desc">Still gaining velocity, the palpitation of night</p>
+            </li>
+            <li class="about-item">
+              <p class="fact-quantity">89</p>
+              <p class="fact-topic">Products</p>
+              <p class="fact-desc">Gaining velocity, the palpitation of night</p>
+            </li>
+          </ul>
+        </div>      
+      </section> -->
+
+      <!-- <section  class="menu section">
+        <div class="container">
+          <b class="menu-topic">Our Menu</b>
+          <h2 class="menu-title">Favorite Food</h2>
+          <p class="menu-text">The sky was cloudless and of a deep dark blue. The spectacle before us was indeed sublime.</p>
+
+          <ul>
+            <li>
+              <img href="#" alt="" />
+              <h4>Paleta de Quesos</h4>
+              <img href="#" alt="" />
+              <p>$9</p>
+            </li>
+            <li>
+              <img href="#" alt="" />
+              <h4>Cambalachne</h4>
+              <img href="#" alt="" />
+              <p>$7</p>
+            </li>
+            <li>
+              <img href="#" alt="" />
+              <h4>Betabel</h4>
+              <img href="#" alt="" />
+              <p>$5</p>
+            </li>
+          </ul>
+          <a src="#">Full Menu</a>
+          <b>Explore by category</b>
+          <ul>
+            <li>
+              <img href="#" alt="" />
+              <h4>Fruits</h4>
+            </li>
+            <li>
+              <img href="#" alt="" />
+              <h4>Dinner</h4>
+            </li>
+            <li>
+              <img href="#" alt="" />
+              <h4>Bakery</h4>
+            </li>
+            <li>
+              <img href="#" alt="" />
+              <h4>Drinks</h4>
+            </li>
+          </ul>
+        </div>
+        
+      </section> -->
+
+      <!-- <section>
+        <b>Gallery</b>
+        <h2>Food Gallery</h2>
+        <p>A peep at some distant orb has power to raise and purify our thoughts like a strain.</p>
+        <img href="#" alt="" />
+      </section> -->
     </main>
 
     <footer>

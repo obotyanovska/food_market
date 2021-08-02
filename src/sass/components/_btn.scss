@@ -1,0 +1,31 @@
+%btn {
+  display: inline-block;
+  min-width: 154px;
+  padding: 15px 25px;
+  border-radius: 12px;
+  font-family: $heading-font-family;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.15;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn-transparent {
+  @extend %btn;
+  border: 1px solid $btn-border-color;
+  color: $btn-text-color;
+  background-color: transparent;
+}
+
+.btn-gradient {
+  @extend %btn;
+  border: none;
+  color: $btn-gradient-text-color;
+  background-image: linear-gradient(
+    to bottom,
+    $btn-gradient-start-color,
+    $btn-gradient-end-color
+  );
+}

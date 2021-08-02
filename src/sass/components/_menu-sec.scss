@@ -1,0 +1,25 @@
+.menu > .container {
+  text-align: center;
+}
+
+.menu {
+  background-image: url('./../images/menu_oval.png');
+  background-size: 448px;
+  background-position: top 125px left 0;
+  background-repeat: no-repeat;
+}
+
+.menu-topic {
+  @extend %topic;
+  margin-bottom: 23px;
+}
+
+.menu-title {
+  @extend %title-h2;
+  margin-bottom: 11px;
+}
+
+.menu-text {
+  @extend %text;
+  margin-bottom: 82px;
+}

@@ -1,0 +1,64 @@
+.about {
+  background-image: url('./../images/about_figure2.png'),
+    url('./../images/about_food2.png'), url('./../images/about_food1.png'),
+    url('./../images/about_figure1.png'),
+    url('./../images/about_background.png');
+  background-size: 270px, 270px, 270px, 202px, 1280px;
+  background-position: top 480px left 135px, top 145px left 434px,
+    top 0 left 135px, top 16px left 434px, top 48px left 0;
+  background-repeat: no-repeat;
+}
+
+.about-content {
+  width: 400px;
+  margin-left: auto;
+  margin-bottom: 270px;
+}
+
+.about-topic {
+  @extend %topic;
+  margin-bottom: 23px;
+}
+
+.about-title {
+  @extend %title-h2;
+  margin-bottom: 25px;
+}
+
+.about-text {
+  @extend %text-big;
+  margin-bottom: 18px;
+}
+
+.about-text-small {
+  @extend %text-grey;
+  margin-bottom: 32px;
+}
+
+.about-list {
+  display: flex;
+  justify-content: center;
+}
+
+.about-item {
+  max-width: 206px;
+  text-align: center;
+
+  & + & {
+    margin-left: 96px;
+  }
+}
+
+.fact-quantity {
+  @extend %title-h2;
+  margin-bottom: 9px;
+}
+
+.fact-topic {
+  @extend %topic;
+  margin-bottom: 18px;
+}
+
+.fact-desc {
+  @extend %text-grey;
+}

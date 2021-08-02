@@ -1,0 +1,56 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.header > .container {
+  position: relative;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 59px;
+    flex-grow: 1;
+  }
+}
+
+.header-logo {
+  display: inline-block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @media screen and (min-width: $tablet) {
+    margin-right: 59px;
+  }
+}
+
+.menu-btn {
+  @include centeredFlex();
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  border: 1px solid $btn-text-color;
+  border-radius: 50%;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.menu-container.is-open .icon-open {
+  display: none;
+}
+
+.icon-close {
+  display: none;
+
+  .menu-container.is-open & {
+    display: block;
+  }
+}
