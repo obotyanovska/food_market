@@ -1,43 +1,65 @@
 .about {
-  background-image: url('./../images/about_figure2.png'),
-    url('./../images/about_food2.png'), url('./../images/about_food1.png'),
-    url('./../images/about_figure1.png'),
-    url('./../images/about_background.png');
-  background-size: 270px, 270px, 270px, 202px, 1280px;
-  background-position: top 480px left 135px, top 145px left 434px,
-    top 0 left 135px, top 16px left 434px, top 48px left 0;
+  padding-top: 460px;
+  padding-bottom: 68px;
+  background-image: url('./../images/about_collage_mobile.png'),
+    url('./../images/about_background_mobile.png');
+  background-size: 329px, 375px;
+  background-position: center top 0, center top 35px;
   background-repeat: no-repeat;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 178px;
+    padding-bottom: 85px;
+    background-image: url('./../images/about_collage.png'),
+      url('./../images/about_background.png');
+    background-size: 570px, 1305px;
+    background-position: left 135px top 0, left 0 top 48px;
+    background-repeat: no-repeat;
+  }
 }
 
 .about-content {
-  width: 400px;
-  margin-left: auto;
-  margin-bottom: 270px;
+  @media screen and (max-width: #{$tablet - 1}) {
+    padding-left: 30px;
+    padding-bottom: 80px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 400px;
+    margin-left: auto;
+    margin-bottom: 270px;
+  }
 }
 
 .about-topic {
   @extend %topic;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 }
 
 .about-title {
-  @extend %title-h2;
-  margin-bottom: 25px;
+  @extend %title-h3;
+  margin-bottom: 12px;
 }
 
 .about-text {
   @extend %text-big;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .about-text-small {
   @extend %text-grey;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 
 .about-list {
+  padding-top: 127px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .about-item {
@@ -45,7 +67,12 @@
   text-align: center;
 
   & + & {
-    margin-left: 96px;
+    margin-top: 33px;
+
+    @media screen and (min-width: $tablet) {
+      margin-left: 96px;
+      margin-top: 0;
+    }
   }
 }
 

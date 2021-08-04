@@ -1,34 +1,60 @@
 .hero {
-  padding-top: 264px;
-  padding-bottom: 90px;
-  background-image: url('./../images/hero_people3.png'),
-    url('./../images/hero_people2.png'), url('./../images/hero_people1.png'),
-    url('./../images/hero_food.png'), url('./../images/hero_figure1.png'),
-    url('./../images/hero_owner.png'), url('./../images/hero_figure2.png'),
-    url('./../images/hero_oval.png');
-  background-size: 64px, 64px, 64px, 270px, 202px, 950px, 270px, 620px;
-  background-position: top 650px right 434px, top 650px right 480px,
-    top 650px right 526px, top 305px right 135px, top 175px right 203px,
-    top 107px right 60px, top 208px right 430px, top 0 right 0;
+  padding-top: 440px;
+  padding-bottom: 70px;
+  background-image: url('./../images/hero_collage.png'),
+    url('./../images/hero_oval_mobile.png');
+  background-size: 550px, 280px;
+  background-position: top 30px right -20px, top 0 right 0;
   background-repeat: no-repeat;
+
+  @media screen and (min-width: #{$tablet}) {
+    padding-top: 264px;
+    padding-bottom: 118px;
+    background-image: url('./../images/hero_collage.png'),
+      url('./../images/hero_oval.png');
+    background-size: 770px, 570px;
+    background-position: top 90px right 21px, top 0 right 0;
+    background-repeat: no-repeat;
+  }
 }
 
 .hero-content {
-  max-width: 470px;
+  @media screen and (max-width: #{$tablet - 1}) {
+    padding-left: 30px;
+  }
+  @media screen and (min-width: #{$tablet}) {
+    max-width: 470px;
+  }
 }
 
 .hero-topic {
   @extend %topic;
   display: inline-block;
-  margin-bottom: 26px;
+  margin-bottom: 23px;
+
+  @media screen and (min-width: #{$tablet}) {
+    margin-bottom: 26px;
+  }
 }
 
 .hero-title {
-  @extend %title-h1;
-  margin-bottom: 22px;
+  @extend %title-h2;
+  margin-bottom: 9px;
+
+  @media screen and (min-width: #{$tablet}) {
+    margin-bottom: 22px;
+  }
 }
 
 .hero-text {
   @extend %text-big;
-  margin-bottom: 36px;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: #{$tablet}) {
+    margin-bottom: 36px;
+  }
+}
+
+.hero > .btn-gradient {
+  padding-bottom: 12px;
 }

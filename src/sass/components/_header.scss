@@ -14,11 +14,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  @media screen and (min-width: $tablet) {
-    margin-left: 59px;
-    flex-grow: 1;
-  }
 }
 
 .header-logo {
