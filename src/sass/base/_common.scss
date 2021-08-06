@@ -1,3 +1,9 @@
+body {
+  font-family: $general-font-family;
+  font-size: 0;
+  color: $text-main-color;
+}
+
 h1,
 h2,
 h3,
@@ -26,4 +32,54 @@ img {
   height: auto;
   object-fit: cover;
   object-position: top center;
+}
+
+//===================================================
+
+.wrapper {
+  width: 100%;
+  min-width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+
+  @media screen and (min-width: $mobile) {
+    width: 320px;
+    padding: 0 10px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+    padding: 0 10px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 1200px;
+    padding: 0 15px;
+  }
+}
+
+.section {
+  padding-top: 25px;
+  padding-bottom: 160px;
+}
+
+.link {
+  display: inline-block;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 2;
+  color: inherit;
+  transition: color $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $text-accent-color;
+  }
 }
