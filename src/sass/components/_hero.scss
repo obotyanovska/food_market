@@ -1,63 +1,110 @@
 .hero {
-  background-color: tomato;
+  @media screen and (max-width: #{$tablet - 1}) {
+    padding: 100px 0 80px 0;
+    background: url('./../images/hero/hero_oval_mobile.png');
+    background-size: 280px;
+    background-position: top 0 right 0;
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (min-width: #{$tablet}) {
+    padding: 175px 0 80px 0;
+    background-image: url('./../images/hero/hero_oval.png');
+    background-size: 570px;
+    background-position: top 0 right 0;
+    background-repeat: no-repeat;
+  }
 }
-// .hero {
-//   padding-top: 440px;
-//   padding-bottom: 70px;
-//   background-image: url('./../images/hero_collage.png'),
-//     url('./../images/hero_oval_mobile.png');
-//   background-size: 550px, 280px;
-//   background-position: top 30px right -20px, top 0 right 0;
-//   background-repeat: no-repeat;
 
-//   @media screen and (min-width: #{$tablet}) {
-//     padding-top: 264px;
-//     padding-bottom: 118px;
-//     background-image: url('./../images/hero_collage.png'),
-//       url('./../images/hero_oval.png');
-//     background-size: 770px, 570px;
-//     background-position: top 90px right 21px, top 0 right 0;
-//     background-repeat: no-repeat;
-//   }
-// }
+.hero__container {
+  display: flex;
+  height: 100%;
 
-// .hero-content {
-//   @media screen and (max-width: #{$tablet - 1}) {
-//     padding-left: 30px;
-//   }
-//   @media screen and (min-width: #{$tablet}) {
-//     max-width: 470px;
-//   }
-// }
+  @media screen and (max-width: #{$tablet - 1}) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 
-// .hero-topic {
-//   @extend %topic;
-//   display: inline-block;
-//   margin-bottom: 23px;
+  @media screen and (min-width: #{$tablet}) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
 
-//   @media screen and (min-width: #{$tablet}) {
-//     margin-bottom: 26px;
-//   }
-// }
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 
-// .hero-title {
-//   @extend %title-h2;
-//   margin-bottom: 9px;
+  *:last-child {
+    margin-bottom: 0;
+  }
 
-//   @media screen and (min-width: #{$tablet}) {
-//     margin-bottom: 22px;
-//   }
-// }
+  @media screen and (max-width: #{$tablet - 1}) {
+    padding: 0 0 0 25px;
+    flex: 1 1 auto;
+  }
 
-// .hero-text {
-//   @extend %text-big;
-//   margin-bottom: 16px;
+  @media screen and (min-width: #{$tablet}) {
+    width: 380px;
+    padding: 0 10px 0 0;
+    margin-right: 50px;
+  }
 
-//   @media screen and (min-width: #{$tablet}) {
-//     margin-bottom: 36px;
-//   }
-// }
+  @media screen and (min-width: $desktop) {
+    width: 480px;
+    margin-right: 100px;
+  }
+}
 
-// .hero > .btn-gradient {
-//   padding-bottom: 12px;
-// }
+.hero__topic {
+  @media screen and (max-width: #{$tablet - 1}) {
+    margin-bottom: 23px;
+  }
+
+  @media screen and (min-width: #{$tablet}) {
+    margin-bottom: 26px;
+  }
+}
+
+.hero__title {
+  @media screen and (max-width: #{$tablet - 1}) {
+    margin-bottom: 9px;
+    font-size: 56px;
+    line-height: 1.1;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 22px;
+    font-size: 60px;
+    line-height: 1.1;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 72px;
+    line-height: 1.1;
+  }
+}
+
+.hero__text {
+  @media screen and (max-width: #{$tablet - 1}) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: #{$tablet}) {
+    margin-bottom: 36px;
+  }
+}
+
+.hero__video {
+  display: flex;
+  height: auto;
+
+  @media screen and (max-width: #{$tablet - 1}) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: #{$tablet}) {
+    flex: 1 1 50%;
+  }
+}

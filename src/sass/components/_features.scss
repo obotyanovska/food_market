@@ -1,31 +1,29 @@
-.features {
-  padding-top: 70px;
-  padding-bottom: 156px;
+.features__container {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
+
+.features__content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 80px;
+
   @media screen and (min-width: $tablet) {
-    padding-bottom: 150px;
+    margin-bottom: 82px;
   }
 }
 
-.features > .container {
-  text-align: center;
-}
-
-.features-topic {
-  @extend %topic;
+.features__topic {
   margin-bottom: 20px;
 }
 
-.features-title {
-  @extend %title-h3;
+.features__title {
   margin-bottom: 14px;
 }
 
-.features-text {
-  @extend %text;
-  margin-bottom: 80px;
-}
-
-.features-list {
+.features__list {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,10 +34,11 @@
   }
 }
 
-.features-item {
+.features__item {
   position: relative;
   padding: 153px 32px 54px 32px;
   width: 270px;
+  text-align: center;
   box-shadow: 0px 24px 48px rgba(0, 24, 52, 0.080899);
   border-radius: 100px 24px 24px 24px;
 
@@ -61,12 +60,16 @@
   &:last-child {
     border-radius: 24px 24px 100px 24px;
   }
+
+  *:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @each $icon, $color1, $color2 in ('apple', #fff0ec, #ffddd4),
   ('bike', #e4fffc, #c5fff8), ('toque', #fff8ec, #ffefd4)
 {
-  .features-icon.icon-#{$icon} {
+  .feature__icon.icon-#{$icon} {
     position: absolute;
     top: -15px;
     left: 50%;
@@ -77,23 +80,17 @@
     width: 140px;
     height: 140px;
     border-radius: 50%;
-    background-image: url('./../images/icon-#{$icon}.svg'),
+    background-image: url('./../images/icons/icon-#{$icon}.svg'),
       linear-gradient(180deg, $color1 0%, $color2 100%);
     background-position: center;
     background-repeat: no-repeat;
   }
 }
 
-.item-title {
-  @extend %title-h4;
+.feature__title {
   margin-bottom: 17px;
 }
 
-.item-text {
-  @extend %text-grey;
+.feature__text {
   margin-bottom: 13px;
-}
-
-.features-link {
-  @extend %text;
 }

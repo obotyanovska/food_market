@@ -13,7 +13,7 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="container">        
+        <div class="_container">        
           <nav class="header__nav">
             <a class="header__logo logo" href="#">Food</a>
 
@@ -33,16 +33,16 @@
             <div class="header__menu menu" data-menu>
               <ul class="menu__list">
                 <li class="menu__item">
-                  <a class="menu__link link" href="#">About</a>
+                  <a class="menu__link _link" href="#">About</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link link" href="#">Menu</a>
+                  <a class="menu__link _link" href="#">Menu</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link link" href="#">Blog</a>
+                  <a class="menu__link _link" href="#">Blog</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link link" href="#">Contact</a>
+                  <a class="menu__link _link" href="#">Contact</a>
                 </li>
               </ul>
               <button class="menu__btn btn-transparent" type="button"><span>Contact us</span></button>
@@ -52,188 +52,210 @@
       </header>
 
       <main class="page">
-        <!-- <section class="hero">
-          <div class="container">
-            <div class="hero-content">
-              <b class="hero-topic">Food Market</b>
-              <h1 class="hero-title">Welcome to Food Market</h1>
-              <p class="hero-text">The sky was cloudless and of a deep dark blue. The spectacle before us was indeed sublime.
+        <section class="hero">
+          <div class="hero__container _container">
+            <div class="hero__content">
+              <b class="hero__topic _topic">Food Market</b>
+              <h1 class="hero__title _title-section">Welcome to Food Market</h1>
+              <p class="hero__text _text-big">The sky was cloudless and of a deep dark blue. The spectacle before us was indeed sublime.
               </p>
-              <a class="btn-gradient" src="#">See Menu</a>
+              <a class="hero__btn btn-gradient" src="#">See Menu</a>
+            </div>
+            <div class="hero__video">
+              <iframe src="https://player.vimeo.com/video/192089758?color=ffffff&title=0&byline=0&portrait=0" width="100%" height="350" 
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
-        </section> -->
-<!-- 
-        <section class="features section">
-          <div class="container">
-            <b class="features-topic">Best Food</b>
-            <h2 class="features-title">Features</h2>
-            <p class="features-text">The sky was cloudless and of a deep dark blue. The spectacle before us was indeed
-              sublime.</p>
+        </section>
 
-            <ul class="features-list">
-              <li class="features-item">
-                <div class="features-icon icon-apple"></div>
-                <h3 class="item-title">Fresh Food</h3>
-                <p class="item-text">As I went on, still gaining velocity, the palpitation of night and day merged.</p>
-                <a class="features-link" src="#">Explore</a>
+        <section class="features _section">
+          <div class="features__container _container">
+            <div class="features__content">
+              <b class="features__topic _topic">Best Food</b>
+              <h2 class="features__title _title-section">Features</h2>
+              <p class="features__text _text">The sky was cloudless and of a deep dark blue. The spectacle before us was indeed
+                sublime.</p>
+            </div>
+            
+            <ul class="features__list">
+              <li class="features__item feature">
+                <div class="feature__icon icon-apple"></div>
+                <h3 class="feature__title _name">Fresh Food</h3>
+                <p class="feature__text _text-grey">As I went on, still gaining velocity, the palpitation of night and day merged.</p>
+                <a class="feature__link _link" src="#">Explore</a>
               </li>
 
-              <li class="features-item">
-                <div class="features-icon icon-bike"></div>
-                <h3 class="item-title">Delivery</h3>
-                <p class="item-text">Went on, still gaining velocity, the palpitation of night and day merged.</p>
-                <a class="features-link" src="#">See map</a>
+              <li class="features__item feature">
+                <div class="feature__icon icon-bike"></div>
+                <h3 class="feature__title _name">Delivery</h3>
+                <p class="feature__text _text-grey">Went on, still gaining velocity, the palpitation of night and day merged.</p>
+                <a class="feature__link _link" src="#">See map</a>
               </li>
 
-              <li class="features-item">
-                <div class="features-icon icon-toque"></div>
-                <h3 class="item-title">Restaurant</h3>
-                <p class="item-text">Still gaining velocity, the went palpitation of night and day merged.</p>
-                <a class="features-link" src="#">Read More</a>
+              <li class="features__item feature">
+                <div class="feature__icon icon-toque"></div>
+                <h3 class="feature__title _name">Restaurant</h3>
+                <p class="feature__text _text-grey">Still gaining velocity, the went palpitation of night and day merged.</p>
+                <a class="feature__link _link" src="#">Read More</a>
               </li>
             </ul>
           </div>
         </section>
 
-        <section class="about section">
-          <div class="container">
-            <div class="about-content">
-              <b class="about-topic">About Us</b>
-              <h2 class="about-title">Most Biggest Food Market</h2>
-              <p class="about-text">The sky was cloudless and of a deep</p>
-              <p class="about-text-small">A peep at some distant orb has power to raise and purify our thoughts like a strain
-                of sacred
-                music.</p>
-              <button class="btn-transparent" type="button">About Us</button>
+        <section class="about _section">
+          <div class="about__container _container">
+            <div class="about__content-block">
+              <div class="about__img-container">
+                <img class="about__img" src="./images/about/about_photo.jpg" alt="Images of dishes" width="570" />
+              </div>
+              
+              <div class="about__content">
+                <b class="about__topic _topic">About Us</b>
+                <h2 class="about__title _title-section">Most Biggest Food Market</h2>
+                <p class="about__text _text-big">The sky was cloudless and of a deep</p>
+                <p class="about__text _text-small">A peep at some distant orb has power to raise and purify our thoughts like a strain
+                  of sacred
+                  music.</p>
+                <button class="about__btn btn-transparent" type="button">About Us</button>
+              </div>  
             </div>
-
-            <ul class="about-list">
-              <li class="about-item">
-                <p class="fact-quantity">2020</p>
-                <p class="fact-topic">Created</p>
-                <p class="fact-desc">As I went on, still gaining velocity, the palpitation</p>
+            
+            <ul class="about__list">
+              <li class="about__item about-fact">
+                <p class="about-fact__number _title-section">2020</p>
+                <p class="about-fact__name _topic">Created</p>
+                <p class="about-fact__desc _text-grey">As I went on, still gaining velocity, the palpitation</p>
               </li>
-              <li class="about-item">
-                <p class="fact-quantity">45+</p>
-                <p class="fact-topic">Employes</p>
-                <p class="fact-desc">Went on, still gaining velocity, the palpitation</p>
+              <li class="about__item about-fact">
+                <p class="about-fact__number _title-section">45+</p>
+                <p class="about-fact__name _topic">Employes</p>
+                <p class="about-fact__desc _text-grey">Went on, still gaining velocity, the palpitation</p>
               </li>
-              <li class="about-item">
-                <p class="fact-quantity">1000</p>
-                <p class="fact-topic">Orders</p>
-                <p class="fact-desc">Still gaining velocity, the palpitation of night</p>
+              <li class="about__item about-fact">
+                <p class="about-fact__number _title-section">1000</p>
+                <p class="about-fact__name _topic">Orders</p>
+                <p class="about-fact__desc _text-grey">Still gaining velocity, the palpitation of night</p>
               </li>
-              <li class="about-item">
-                <p class="fact-quantity">89</p>
-                <p class="fact-topic">Products</p>
-                <p class="fact-desc">Gaining velocity, the palpitation of night</p>
+              <li class="about__item about-fact">
+                <p class="about-fact__number _title-section">89</p>
+                <p class="about-fact__name _topic">Products</p>
+                <p class="about-fact__desc _text-grey">Gaining velocity, the palpitation of night</p>
               </li>
             </ul>
           </div>
         </section>
 
-        <section class="menu section">
-          <div class="container">
-            <b class="menu-topic">Our Menu</b>
-            <h2 class="menu-title">Favorite Food</h2>
-            <p class="menu-text">The sky was cloudless and of a deep dark blue. The spectacle before us was indeed sublime.
-            </p>
-
-            <ul class="dish-list">
-              <li class="dish-item">
-                <img class="dish-photo" src="./images/food-menu-dish1.png" width="270" alt="Dish from the menu" />
-                <div class="dish-thumb">
-                  <h4 class="dish-name">Paleta de Quesos</h4>
-                  <svg class="icon-star" width="18" height="17">
-                    <use href="./images/symbol-defs.svg#icon-star" />
-                  </svg>
-                  <svg class="icon-star" width="18" height="17">
-                    <use href="./images/symbol-defs.svg#icon-star" />
-                  </svg>
-                  <svg class="icon-star" width="18" height="17">
-                    <use href="./images/symbol-defs.svg#icon-star" />
-                  </svg>
-                  <svg class="icon-star" width="18" height="17">
-                    <use href="./images/symbol-defs.svg#icon-star" />
-                  </svg>
-                  <svg class="icon-star" width="18" height="17">
-                    <use href="./images/symbol-defs.svg#icon-star" />
-                  </svg>
+        <section class="food-menu _section">
+          <div class="food-menu__container _container">
+            <div class="food-menu__content-block">
+              <b class="food-menu__topic _topic">Our Menu</b>
+              <h2 class="food-menu__title _title-section">Favorite Food</h2>
+              <p class="food-menu__text _text">The sky was cloudless and of a deep dark blue. The spectacle before us was indeed sublime.
+              </p>
+            </div>
+            
+            <ul class="food-menu__list">
+              <li class="food-menu__item menu-dish">
+                <img class="menu-dish__photo" src="./images/food-menu/food-menu1.jpg" width="270" alt="Dish from the menu" />
+                <div class="menu-dish__thumb">
+                  <h4 class="menu-dish__name _name">Paleta de Quesos</h4>
+                  <div class="menu-dish__stars">
+                    <svg class="menu-dish__icon-star" width="18" height="17">
+                      <use href="./images/symbol-defs.svg#icon-star" />
+                    </svg>
+                    <svg class="menu-dish__icon-star" width="18" height="17">
+                      <use href="./images/symbol-defs.svg#icon-star" />
+                    </svg>
+                    <svg class="menu-dish__icon-star" width="18" height="17">
+                      <use href="./images/symbol-defs.svg#icon-star" />
+                    </svg>
+                    <svg class="menu-dish__icon-star" width="18" height="17">
+                      <use href="./images/symbol-defs.svg#icon-star" />
+                    </svg>
+                    <svg class="menu-dish__icon-star" width="18" height="17">
+                      <use href="./images/symbol-defs.svg#icon-star" />
+                    </svg>
+                  </div>
+                 
                 </div>
-                <div class="dish-price">
-                  <p class="price">$9</p>
-                </div>
-              </li>
-              <li class="dish-item">
-                <img class="dish-photo" src="./images/food-menu-dish1.png" width="270" alt="Dish from the menu" />
-                <div class="dish-thumb">
-                  <h4 class="dish-name">Cambalachne</h4>
-                  <svg class="icon-star" width="18" height="17">
-                    <use href="./images/symbol-defs.svg#icon-star" />
-                  </svg>
-                  <svg class="icon-star" width="18" height="17">
-                    <use href="./images/symbol-defs.svg#icon-star" />
-                  </svg>
-                  <svg class="icon-star" width="18" height="17">
-                    <use href="./images/symbol-defs.svg#icon-star" />
-                  </svg>
-                  <svg class="icon-star" width="18" height="17">
-                    <use href="./images/symbol-defs.svg#icon-star" />
-                  </svg>
-                  <svg class="icon-star" width="18" height="17">
-                    <use href="./images/symbol-defs.svg#icon-star" />
-                  </svg>
-                </div>
-                <div class="dish-price">
-                  <p class="price">$7</p>
+                <div class="menu-dish__price">
+                  <p class="menu-dish__price-number _name">$9</p>
                 </div>
               </li>
-              <li class="dish-item">
-                <img class="dish-photo" src="./images/food-menu-dish1.png" width="270" alt="Dish from the menu" />
-                <div class="dish-thumb">
-                  <h4 class="dish-name">Betabel</h4>
-                  <svg class="icon-star" width="18" height="17">
-                    <use href="./images/symbol-defs.svg#icon-star" />
-                  </svg>
-                  <svg class="icon-star" width="18" height="17">
-                    <use href="./images/symbol-defs.svg#icon-star" />
-                  </svg>
-                  <svg class="icon-star" width="18" height="17">
-                    <use href="./images/symbol-defs.svg#icon-star" />
-                  </svg>
-                  <svg class="icon-star" width="18" height="17">
-                    <use href="./images/symbol-defs.svg#icon-star" />
-                  </svg>
-                  <svg class="icon-star" width="18" height="17">
-                    <use href="./images/symbol-defs.svg#icon-star" />
-                  </svg>
+              <li class="food-menu__item menu-dish">
+                <img class="menu-dish__photo" src="./images/food-menu/food-menu2.jpg" width="270" alt="Dish from the menu" />
+                <div class="menu-dish__thumb">
+                  <h4 class="menu-dish__name _name">Cambalachne</h4>
+                  <div class="menu-dish__stars">
+                    <svg class="menu-dish__icon-star" width="18" height="17">
+                      <use href="./images/symbol-defs.svg#icon-star" />
+                    </svg>
+                    <svg class="menu-dish__icon-star" width="18" height="17">
+                      <use href="./images/symbol-defs.svg#icon-star" />
+                    </svg>
+                    <svg class="menu-dish__icon-star" width="18" height="17">
+                      <use href="./images/symbol-defs.svg#icon-star" />
+                    </svg>
+                    <svg class="menu-dish__icon-star" width="18" height="17">
+                      <use href="./images/symbol-defs.svg#icon-star" />
+                    </svg>
+                    <svg class="menu-dish__icon-star" width="18" height="17">
+                      <use href="./images/symbol-defs.svg#icon-star" />
+                    </svg>
+                  </div>
                 </div>
-                <div class="dish-price">
-                  <p class="price">$5</p>
+                <div class="menu-dish__price">
+                  <p class="menu-dish__price-number _name">$7</p>
+                </div>
+              </li>
+              <li class="food-menu__item menu-dish">
+                <img class="menu-dish__photo" src="./images/food-menu/food-menu3.jpg" width="270" alt="Dish from the menu" />
+                <div class="menu-dish__thumb">
+                  <h4 class="menu-dish__name _name">Betabel</h4>
+                  <div class="menu-dish__stars">
+                    <svg class="menu-dish__icon-star" width="18" height="17">
+                      <use href="./images/symbol-defs.svg#icon-star" />
+                    </svg>
+                    <svg class="menu-dish__icon-star" width="18" height="17">
+                      <use href="./images/symbol-defs.svg#icon-star" />
+                    </svg>
+                    <svg class="menu-dish__icon-star" width="18" height="17">
+                      <use href="./images/symbol-defs.svg#icon-star" />
+                    </svg>
+                    <svg class="menu-dish__icon-star" width="18" height="17">
+                      <use href="./images/symbol-defs.svg#icon-star" />
+                    </svg>
+                    <svg class="menu-dish__icon-star" width="18" height="17">
+                      <use href="./images/symbol-defs.svg#icon-star" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="menu-dish__price">
+                  <p class="menu-dish__price-number _name">$5</p>
                 </div>
               </li>
             </ul>
 
-            <a class="btn-transparent" src="#">Full Menu</a>
-            <div class="menu-category">
-              <b class="category-title">Explore by category</b>
-              <ul class="category-list">
-                <li class="category-item icon-grape">
-                  <div class="category-icon "></div>
-                  <h4 class="category-name">Fruits</h4>
+            <a class="food-menu__btn btn-transparent" src="#">Full Menu</a>
+            
+            <div class="food-menu__category category-menu">
+              <b class="category-menu__title _text-big">Explore by category</b>
+              <ul class="category-menu__list">
+                <li class="category-menu__item icon-grape">
+                  <div class="category-menu__icon "></div>
+                  <h4 class="category-menu__name _text">Fruits</h4>
                 </li>
-                <li class="category-item icon-dish">
-                  <div class="category-icon "></div>
-                  <h4 class="category-name">Dinner</h4>
+                <li class="category-menu__item icon-dish">
+                  <div class="category-menu__icon "></div>
+                  <h4 class="category-menu__name _text">Dinner</h4>
                 </li>
-                <li class="category-item icon-cake">
-                  <div class="category-icon "></div>
-                  <h4 class="category-name">Bakery</h4>
+                <li class="category-menu__item icon-cake">
+                  <div class="category-menu__icon "></div>
+                  <h4 class="category-menu__name _text">Bakery</h4>
                 </li>
-                <li class="category-item icon-wineglass">
-                  <div class="category-icon "></div>
-                  <h4 class="category-name">Drinks</h4>
+                <li class="category-menu__item icon-wineglass">
+                  <div class="category-menu__icon "></div>
+                  <h4 class="category-menu__name _text">Drinks</h4>
                 </li>
               </ul>
             </div>
@@ -242,20 +264,39 @@
 
         </section>
 
-        <section class="gallery section">
-          <div class="container">
-            <div class="gallery-content">
-              <b class="gallery-topic">Gallery</b>
-              <h2 class="gallery-title">Food Gallery</h2>
-              <p class="gallery-text">A peep at some distant orb has power to raise and purify our thoughts like a strain.</p>
-
-              <button class="btn-slider" type="button"></button>
-              <span>1/5</span>
-              <button class="btn-slider" type="button"></button>
-              <img class="gallery-photo" />
+        <section class="gallery _section">
+          <div class="gallery__container _container">
+            <div class="gallery__content">
+              <b class="gallery__topic _topic">Gallery</b>
+              <h2 class="gallery__title _title-section">Food Gallery</h2>
+              <p class="gallery__text _text-grey">A peep at some distant orb has power to raise and purify our thoughts like a strain.</p>
+              <div class="gallery__pagination pagination-gallery">
+                <button 
+                class="pagination-gallery__btn" 
+                type="button"
+                aria-label="Gallery button back"
+                data-gallery-back-btn>
+                  <svg width="12" height="16">
+                    <use href="./images/symbol-defs.svg#icon-arrow-back"/>
+                  </svg>
+                </button>
+                <span class="pagination-gallery__numbers _name">1/5</span>
+                <button  
+                  class="pagination-gallery__btn" 
+                  type="button"
+                  aria-label="Gallery button forward"
+                  data-gallery-forward-btn>
+                  <svg width="12" height="16">
+                    <use href="./images/symbol-defs.svg#icon-arrow-forward"/>
+                  </svg>
+                </button>
+              </div>  
+            </div>
+            <div class="gallery__img-container">
+              <img class="gallery__img" src="./images/about/about_photo.jpg" alt="Images of dishes" width="770" />
             </div>
           </div>
-        </section> -->
+        </section>
       </main>
 
       <footer>
