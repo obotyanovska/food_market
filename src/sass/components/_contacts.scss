@@ -1,23 +1,22 @@
-.gallery {
-  background-image: url('./../images/gallery/gallery_background_mobile.png');
+.contacts {
+  background-image: url('./../images/contacts/contacts_background_mobile.png');
   background-size: 100% 820px;
   background-position: center top 0;
   background-repeat: no-repeat;
 
   @media screen and (min-width: $tablet) {
-    background-image: url('./../images/gallery/gallery_background_desktop.png');
-    background-size: 100% 570px;
+    background-image: url('./../images/contacts/contacts_background_desktop.png');
+    background-size: 100% 670px;
     background-position: left 40px top 0;
   }
 
   @media screen and (min-width: $desktop) {
-    background-image: url('./../images/gallery/gallery_background_desktop.png');
     background-size: 100% 580px;
     background-position: left 60px top 105px;
   }
 }
 
-.gallery__container {
+.contacts__container {
   @media screen and (max-width: #{$tablet - 1}) {
     display: flex;
     flex-direction: column;
@@ -38,7 +37,7 @@
   }
 }
 
-.gallery__content {
+.contacts__content {
   &*:last-child {
     margin-bottom: 0;
   }
@@ -52,7 +51,7 @@
 
   @media screen and (min-width: $tablet) {
     width: 270px + 130px;
-    padding: 0 30px 96px 100px;
+    padding: 0 30px 0 100px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -60,7 +59,7 @@
   }
 }
 
-.gallery__topic {
+.contacts__topic {
   margin-bottom: 20px;
 
   @media screen and (min-width: $tablet) {
@@ -68,7 +67,7 @@
   }
 }
 
-.gallery__title {
+.contacts__title {
   margin-bottom: 14px;
 
   @media screen and (min-width: $tablet) {
@@ -76,30 +75,15 @@
   }
 }
 
-.gallery__text {
-  margin-bottom: 33px;
+.contacts__text {
+  margin-bottom: 40px;
 }
 
-.pagination-gallery__btn {
-  width: 48px;
-  height: 48px;
-  border: 1px solid $btn-border-color;
-  border-radius: 50%;
-  background-color: transparent;
-  transition: all $timing-function;
-
-  &:hover,
-  &:focus {
-    background-color: $btn-border-color;
-    fill: $white-color;
-  }
+.contacts__text-small {
+  margin-bottom: 10px;
 }
 
-.pagination-gallery__numbers {
-  padding: 0 16px;
-}
-
-.gallery__img-container {
+.contacts__img-container {
   @media screen and (max-width: #{$tablet - 1}) {
     max-width: 325px;
   }
@@ -113,8 +97,4 @@
   @media screen and (min-width: $desktop) {
     flex: 1 1 auto;
   }
-}
-
-.gallery__img {
-  border-radius: 80px 10px 10px 10px;
 }
