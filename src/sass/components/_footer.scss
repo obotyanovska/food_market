@@ -1,0 +1,246 @@
+.footer {
+  padding: 20px 0 20px 0;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    padding: 42px 0 18px 0;
+
+    @media screen and (min-width: $desktop) {
+      flex-direction: row;
+      flex: 1 1 auto;
+      justify-content: space-between;
+    }
+  }
+
+  &__info {
+    position: relative;
+  }
+}
+
+.menu-footer {
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 0 30px 0;
+    }
+
+    @media screen and (min-width: $desktop) {
+      flex: 1 1 auto;
+    }
+  }
+
+  &__links-menu {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.menu-links {
+  &__logo {
+    margin-bottom: 20px;
+  }
+
+  &__social-list {
+    display: flex;
+    padding: 0 0 72px 0;
+  }
+
+  &__item {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+
+    &:nth-child(1) {
+      background-color: $btn-gradient-end-color;
+    }
+
+    &:nth-child(2) {
+      background-color: $text-accent-color;
+    }
+
+    &:nth-child(3) {
+      background-color: #efa322;
+    }
+
+    & + & {
+      margin-left: 8px;
+    }
+  }
+
+  &__link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon {
+  }
+}
+
+.nav-footer {
+  display: flex;
+  padding: 0 0 62px 0;
+
+  @media screen and (min-width: $tablet) {
+    padding: 0 0 0 0;
+  }
+
+  &__container {
+    flex: 0 0 50%;
+
+    @media screen and (min-width: $tablet) {
+      min-width: 170px;
+      height: 100%;
+    }
+
+    @media screen and (min-width: $tablet) {
+      flex: 1 1 auto;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__list {
+  }
+
+  &__item {
+  }
+
+  &__link {
+  }
+}
+
+.newsletter-footer {
+  padding: 0 0 80px 0;
+  min-width: 270px;
+
+  @media screen and (min-width: $tablet) {
+    padding: 0 0 30px 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 0 0 30px 140px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__form {
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      align-items: center;
+    }
+
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__input {
+    width: 260px;
+    height: 50px;
+    border: 1px solid $text-add-color;
+    border-radius: 12px;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 0;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 16px;
+    }
+
+    &::placeholder {
+      color: $text-add-color;
+      font-size: 16px;
+    }
+  }
+
+  &__btn {
+    @media screen and (min-width: $tablet) {
+      margin-left: 20px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-left: 0;
+    }
+  }
+}
+
+.info-footer {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: $text-add-color;
+    }
+
+    @media screen and (min-width: $tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 30px 0 10px 0;
+    }
+  }
+
+  &__text {
+    display: inline-block;
+    margin-bottom: 32px;
+    width: 190px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 0;
+      width: auto;
+      padding: 5px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    margin: -41px;
+  }
+
+  &__item {
+    flex: 0 0 50%;
+    text-align: center;
+
+    @media screen and (min-width: $tablet) {
+      flex: 1 1 auto;
+      margin: 41px;
+    }
+  }
+
+  &__link {
+    padding: 5px;
+  }
+}
