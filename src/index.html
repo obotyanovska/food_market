@@ -49,10 +49,10 @@
             </div>
           </nav>      
         </div>
-      </header>
+      </header> -->
 
       <main class="page">
-        <section class="hero">
+        <!-- <section class="hero">
           <div class="hero__container _container">
             <div class="hero__content">
               <b class="hero__topic _topic">Food Market</b>
@@ -66,9 +66,9 @@
                 frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
-        </section>
+        </section> -->
 
-        <section class="features _section">
+        <!-- <section class="features _section">
           <div class="features__container _container">
             <div class="features__content">
               <b class="features__topic _topic">Best Food</b>
@@ -100,9 +100,9 @@
               </li>
             </ul>
           </div>
-        </section>
+        </section> -->
 
-        <section class="about _section">
+        <!-- <section class="about _section">
           <div class="about__container _container">
             <div class="about__content-block">
               <div class="about__img-container">
@@ -143,9 +143,9 @@
               </li>
             </ul>
           </div>
-        </section>
+        </section> -->
 
-        <section class="food-menu _section">
+        <!-- <section class="food-menu _section">
           <div class="food-menu__container _container">
             <div class="food-menu__content-block">
               <b class="food-menu__topic _topic">Our Menu</b>
@@ -262,12 +262,12 @@
 
           </div>
 
-        </section>
+        </section> -->
 
         <section class="gallery _section">
           <div class="gallery__container _container">
             <div class="gallery__content">
-              <b class="gallery__topic _topic">Gallery</b>
+              <p class="gallery__topic _topic">Gallery</p>
               <h2 class="gallery__title _title-section">Food Gallery</h2>
               <p class="gallery__text _text-grey">A peep at some distant orb has power to raise and purify our thoughts like a strain.</p>
               <div class="gallery__pagination pagination-gallery">
@@ -293,12 +293,20 @@
               </div>  
             </div>
             <div class="gallery__img-container">
-              <img class="gallery__img" src="./images/about/about_photo.jpg" alt="Images of dishes" width="770" />
+              <picture>
+                <source
+                  srcset="./images/gallery/gallery_photo-770.jpg 1x, ./images/gallery/gallery_photo-770@2x.jpg 2x"
+                  media="(min-width:768px)">
+                <source
+                  srcset="./images/gallery/gallery_photo-300.jpg 1x, ./images/gallery/gallery_photo-300@2x.jpg 2x"
+                  media="(max-width:767px)">
+                <img src="./images/gallery/gallery_photo-770.jpg" alt="Image of a dishes" />
+              </picture>
             </div>
           </div>
         </section>
 
-        <section class="reviews _section">
+        <!-- <section class="reviews _section">
           <div class="reviews__container _container">
             <div class="reviews__content-block">
               <b class="reviews__topic _topic">Clients Say</b>
@@ -397,9 +405,9 @@
               </li>
             </ul>
           </div>
-        </section>
+        </section> -->
 
-        <section class="app _section">
+        <!-- <section class="app _section">
           <div class="app__container _container">
             <div class="app__content">
               <b class="app__topic _topic">Application</b>
@@ -416,9 +424,9 @@
               <img class="app__img" src="./images/application/iphone.png" alt="Images of dishes" width="370" />
             </div>
           </div>
-        </section>
+        </section> -->
 
-        <section class="blog _section">
+        <!-- <section class="blog _section">
           <div class="blog__container _container">
             <div class="blog__content-block">
               <b class="blog__topic _topic">Our Blog</b>
@@ -448,25 +456,38 @@
               </li>
             </ul>
           </div> 
-        </section>
+        </section> -->
 
         <section class="contacts _section">
           <div class="contacts__container _container">
             <div class="contacts__content">
-              <b class="contacts__topic _topic">We On Map</b>
+              <p class="contacts__topic _topic">We On Map</p>
               <h2 class="contacts__title _title-section">Find Our Market</h2>
               <p class="contacts__text _text-big">The sky was cloudless and of a deep dark blue.</p>
               <p class="contacts__text-small _text-small">Working Hours:</p>
               <p class="contacts__text-name _name">9:00 am. – 8:00 pm.</p>
             </div>
             <div class="contacts__img-container">
-              <img class="contacts__img" src="./images/contacts/contacts_map.png" alt="Images of dishes" width="770" />
+              <picture>
+                <source srcset="./images/contacts/map-770.png 1x, ./images/contacts/map-770@2x.png 2x"
+                  media="(min-width:768px)">
+                <source srcset="./images/contacts/map-300.png 1x, ./images/contacts/map-300@2x.png 2x"
+                  media="(max-width:767px)">
+                <img src="./images/contacts/map-770.png" alt="Map" />
+              </picture>
+              <div class="contacts__address address">
+                <p class="address__topic _topic">Address</p>
+                <address class="address__text _text-small">
+                  8186 W. Bayport St. <br/>
+                  Phillipsburg, NJ 08865
+                </address>
+              </div>
             </div>
           </div>
         </section>
       </main>
 
-      <footer class="footer">
+      <!-- <footer class="footer">
         <div class="footer__container _container">
           <section class="footer__menu menu-footer">
             <div class="menu-footer__container">
@@ -566,7 +587,7 @@
             </div> 
           </section>
         </div>
-      </footer>
+      </footer> -->
     </div>
     
   </body>
