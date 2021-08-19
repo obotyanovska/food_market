@@ -1,30 +1,26 @@
-.blog__container {
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 auto;
-  align-items: center;
+.blog {
+  padding: 120px 0 145px 0;
+
+  @media screen and (min-width: $tablet) {
+    padding: 130px 0 160px 0;
+  }
 }
 
 .blog__content-block {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 0 0 70px 0;
   text-align: center;
 
-  @media screen and (max-width: #{$tablet - 1}) {
-    margin-bottom: 60px;
-  }
-
   @media screen and (min-width: $tablet) {
-    margin-bottom: 82px;
+    margin: auto;
+    padding: 6px 0 66px 0;
     width: 470px;
   }
 }
 
 .blog__topic {
-  @media screen and (max-width: #{$tablet - 1}) {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 20px;
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 23px;
@@ -32,9 +28,7 @@
 }
 
 .blog__title {
-  @media screen and (max-width: #{$tablet - 1}) {
-    margin-bottom: 14px;
-  }
+  margin-bottom: 14px;
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 11px;
@@ -43,51 +37,45 @@
 
 .blog__list {
   display: flex;
-  flex-wrap: wrap;
-  padding: 0 0 112px 0;
-
-  @media screen and (max-width: #{$tablet - 1}) {
-    flex-direction: column;
-    align-items: center;
-  }
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 64px 0;
 
   @media screen and (min-width: $tablet) {
     flex-direction: row;
     justify-content: center;
-    margin: -12px;
+    margin: -8px;
   }
 
   @media screen and (min-width: $desktop) {
-    flex-direction: row;
-    margin: -15px;
+    margin: -23px;
+    padding: 0 0 90px 0;
   }
 }
 
 .blog__item {
   position: relative;
-  width: 270px;
+  padding: 265px 32px 39px 32px;
+  width: 254px;
+  height: 100%;
   background-color: white;
   box-shadow: 0px 24px 48px rgba(0, 24, 52, 0.080899);
   border-radius: 100px 24px 24px 24px;
 
   @media screen and (max-width: #{$tablet - 1}) {
+    margin-left: 32px;
+
     &:nth-child(n + 2) {
       display: none;
     }
   }
 
   @media screen and (min-width: $tablet) {
-    margin: 12px;
-  }
-
-  @media screen and (max-width: #{$desktop - 1}) {
-    &:nth-child(n + 3) {
-      display: none;
-    }
+    margin: 8px;
   }
 
   @media screen and (min-width: $desktop) {
-    margin: 15px;
+    margin: 23px;
   }
 }
 
@@ -99,14 +87,8 @@
   top: -32px;
   left: -16px;
   border-radius: 100px 24px 24px 24px;
-}
 
-.item-blog__thumb {
-  display: flex;
-  flex-direction: column;
-  padding: 265px 32px 39px;
-}
-
-.item-blog__name {
-  margin-bottom: 10px;
+  @media screen and (min-width: $tablet) and (max-width: #{$desktop - 1}) {
+    left: -8px;
+  }
 }

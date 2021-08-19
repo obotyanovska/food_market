@@ -1,13 +1,12 @@
 .food-menu {
-  background-image: url('./../images/food-menu/menu_oval.png');
+  padding: 120px 0 145px 0;
+  background-image: url('./../images/backgrounds/background_oval.png');
+  background-size: 223px;
+  background-position: top 375px left 0;
   background-repeat: no-repeat;
 
-  @media screen and (max-width: #{$tablet - 1}) {
-    background-size: 223px;
-    background-position: top 275px left 0;
-  }
-
   @media screen and (min-width: $tablet) {
+    padding: 130px 0 160px 0;
     background-size: 420px;
     background-position: top 40px left 0;
   }
@@ -23,23 +22,18 @@
 .food-menu__content-block {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 0 0 70px 0;
   text-align: center;
 
-  @media screen and (max-width: #{$tablet - 1}) {
-    margin-bottom: 60px;
-  }
-
   @media screen and (min-width: $tablet) {
-    margin-bottom: 82px;
+    margin: auto;
+    padding: 6px 0 66px 0;
     width: 470px;
   }
 }
 
 .food-menu__topic {
-  @media screen and (max-width: #{$tablet - 1}) {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 20px;
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 23px;
@@ -47,9 +41,7 @@
 }
 
 .food-menu__title {
-  @media screen and (max-width: #{$tablet - 1}) {
-    margin-bottom: 14px;
-  }
+  margin-bottom: 14px;
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 11px;
@@ -58,51 +50,49 @@
 
 .food-menu__list {
   display: flex;
-  flex-wrap: wrap;
-  padding: 0 0 112px 0;
-
-  @media screen and (max-width: #{$tablet - 1}) {
-    flex-direction: column;
-    align-items: center;
-  }
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 64px 0;
 
   @media screen and (min-width: $tablet) {
     flex-direction: row;
     justify-content: center;
-    margin: -12px;
+    margin: -8px;
   }
 
   @media screen and (min-width: $desktop) {
-    flex-direction: row;
-    margin: -15px;
+    margin: -23px;
+    padding: 0 0 90px 0;
   }
 }
 
 .food-menu__item {
   position: relative;
+  padding: 217px 32px 44px 32px;
   width: 270px;
+  height: 100%;
   background-color: white;
   box-shadow: 0px 24px 48px rgba(0, 24, 52, 0.080899);
   border-radius: 100px 24px 24px 24px;
 
   @media screen and (max-width: #{$tablet - 1}) {
+    margin-left: 32px;
+
     &:nth-child(n + 2) {
       display: none;
     }
   }
 
-  @media screen and (min-width: $tablet) {
-    margin: 12px;
-  }
+  @media screen and (min-width: $tablet) and (max-width: #{$desktop - 1}) {
+    margin: 15px;
 
-  @media screen and (max-width: #{$desktop - 1}) {
     &:nth-child(n + 3) {
       display: none;
     }
   }
 
   @media screen and (min-width: $desktop) {
-    margin: 15px;
+    margin: 23px;
   }
 }
 
@@ -119,19 +109,14 @@
 .menu-dish__thumb {
   display: flex;
   flex-direction: column;
-  padding: 313px 34px 71px;
-
-  @media screen and(min-width: $tablet) {
-    padding: 217px 34px 71px;
-  }
-}
-
-.menu-dish__stars {
-  display: flex;
 }
 
 .menu-dish__name {
   margin-bottom: 10px;
+}
+
+.menu-dish__stars {
+  display: flex;
 }
 
 .menu-dish__icon-star {
@@ -153,8 +138,22 @@
   background-image: linear-gradient(180deg, #e4fffc 0%, #c5fff8 100%);
 }
 
+.menu-dish__pagination {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.menu-dish__icon-oval {
+  & + & {
+    margin-left: 18px;
+  }
+}
+
+.food-menu__btn {
+  margin-bottom: 72px;
+}
+
 .food-menu__category {
-  padding-top: 72px;
   text-align: center;
 }
 
@@ -164,12 +163,33 @@
 
 .category-menu__list {
   display: flex;
-  flex-wrap: wrap;
-  margin: -7px;
+  flex-direction: column;
 
   @media screen and (min-width: $tablet) {
     flex-direction: row;
     justify-content: center;
+    margin: -15px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin: -23px;
+    padding: 0 0 90px 0;
+  }
+}
+
+.category-menu__item {
+  @media screen and (max-width: #{$tablet - 1}) {
+    & + & {
+      margin-top: 48px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin: 15px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin: 23px;
   }
 }
 
@@ -181,7 +201,6 @@
     position: relative;
     padding: 122px 54px 38px;
     width: 170px;
-    margin: 7px;
     text-align: center;
     border-radius: 50px 24px 24px 24px;
     background-image: linear-gradient(180deg, $color1 0%, $color2 100%);
@@ -206,6 +225,6 @@
   }
 }
 
-.category-menu__item:not(:nth-child(-n - 2)) {
-  margin-bottom: 48px;
-}
+// .category-menu__item:not(:nth-child(-n - 2)) {
+//   margin-bottom: 48px;
+// }
