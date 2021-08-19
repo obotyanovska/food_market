@@ -1,27 +1,26 @@
-.reviews__container {
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 auto;
-  align-items: center;
+.reviews {
+  padding: 120px 0 145px 0;
+
+  @media screen and (min-width: $tablet) {
+    padding: 130px 0 160px 0;
+  }
 }
 
 .reviews__content-block {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 0 0 70px 0;
   text-align: center;
-  padding: 85px 0 50px 0;
 
   @media screen and (min-width: $tablet) {
-    margin-bottom: 82px;
+    margin: auto;
+    padding: 6px 0 66px 0;
     width: 470px;
   }
 }
 
 .reviews__topic {
-  @media screen and (max-width: #{$tablet - 1}) {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 20px;
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 23px;
@@ -29,9 +28,7 @@
 }
 
 .reviews__title {
-  @media screen and (max-width: #{$tablet - 1}) {
-    margin-bottom: 14px;
-  }
+  margin-bottom: 14px;
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 11px;
@@ -40,13 +37,9 @@
 
 .reviews__list {
   display: flex;
-  flex-wrap: wrap;
-  padding: 0 0 94px 0;
-
-  @media screen and (max-width: #{$tablet - 1}) {
-    flex-direction: column;
-    align-items: center;
-  }
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 64px 0;
 
   @media screen and (min-width: $tablet) {
     flex-direction: row;
@@ -55,18 +48,29 @@
   }
 
   @media screen and (min-width: $desktop) {
-    flex-direction: row;
     margin: -15px;
+    padding: 0 0 90px 0;
   }
 }
 
 .reviews__item {
   position: relative;
-  padding: 74px 32px 38px;
+  padding: 74px 32px 38px 32px;
   width: 270px;
+  height: 100%;
   background-color: white;
   box-shadow: 0px 24px 48px rgba(0, 24, 52, 0.080899);
   border-radius: 100px 24px 24px 24px;
+
+  &:before {
+    position: absolute;
+    top: -8px;
+    right: 33px;
+    content: '';
+    width: 60px;
+    height: 40px;
+    background-image: url('./../images/icons/icon-quotes.svg');
+  }
 
   @media screen and (max-width: #{$tablet - 1}) {
     &:nth-child(n + 2) {
@@ -76,12 +80,6 @@
 
   @media screen and (min-width: $tablet) {
     margin: 12px;
-  }
-
-  @media screen and (max-width: #{$desktop - 1}) {
-    &:nth-child(n + 3) {
-      display: none;
-    }
   }
 
   @media screen and (min-width: $desktop) {
@@ -101,21 +99,21 @@
   }
 }
 
-.article-review__user {
+.article-review__user-photo {
   position: absolute;
   right: 32px;
   bottom: -16px;
   width: 64px;
   height: 64px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-radius: 50%;
 }
 
-.article-review__user-photo {
-  border-radius: 50%;
-  width: 64px;
-  height: 64px;
-  object-position: center;
+.reviews__pagination {
+  text-align: center;
+}
+
+.reviews__icon-oval {
+  & + & {
+    margin-left: 18px;
+  }
 }
