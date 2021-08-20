@@ -1,11 +1,11 @@
 .app {
-  background-image: url('./../images/application/app_background_mobile.png');
+  background-image: url('./../images/backgrounds/background_right_mobile.png');
   background-size: 100% 869px;
   background-position: center top 32px;
   background-repeat: no-repeat;
 
   @media screen and (min-width: $tablet) {
-    background-image: url('./../images/application/app_background_desktop.png');
+    background-image: url('./../images/backgrounds/background_right_desktop.png');
     background-size: 100% 580px;
     background-position: right 40px top 0;
   }

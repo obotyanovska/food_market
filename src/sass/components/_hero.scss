@@ -1,7 +1,7 @@
 .hero {
   @media screen and (max-width: #{$tablet - 1}) {
     padding: 100px 0 80px 0;
-    background: url('./../images/hero/hero_oval_mobile.png');
+    background: url('./../images/backgrounds/hero_oval_mobile.png');
     background-size: 280px;
     background-position: top 0 right 0;
     background-repeat: no-repeat;
@@ -9,7 +9,7 @@
 
   @media screen and (min-width: #{$tablet}) {
     padding: 175px 0 80px 0;
-    background-image: url('./../images/hero/hero_oval.png');
+    background-image: url('./../images/backgrounds/hero_oval.png');
     background-size: 570px;
     background-position: top 0 right 0;
     background-repeat: no-repeat;
